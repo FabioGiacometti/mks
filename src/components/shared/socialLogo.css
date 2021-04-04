@@ -1,0 +1,24 @@
+.social-logo {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.social-logo__fb {
+  background-image: url("../../assets/images/icon-facebook.svg");
+}
+
+.social-logo__tw {
+  background-image: url("../../assets/images/icon-twitter.svg");
+}
+
+.social-logo__ig {
+  background-image: url("../../assets/images/icon-instagram.svg");
+}
+
+.social-logo__yt {
+  background-image: url("../../assets/images/icon-youtube.svg");
+}
+/*# sourceMappingURL=socialLogo.css.map */

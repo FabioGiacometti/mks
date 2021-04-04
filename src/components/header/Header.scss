@@ -1,0 +1,14 @@
+@import '../../App.scss';
+
+.header__container{
+    margin-top: 36px;
+}
+
+.title{
+    @include text-element(26px, 700, $text);
+}
+
+.subtitle{
+    @include text-element(14px, 700, $light-text);
+    margin-top: 10px;
+}

@@ -1,0 +1,117 @@
+@import "../../App.scss";
+
+.card__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: $card-bg;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0.25em;
+  padding-bottom: 1.1rem;
+  transition: all 200ms;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover{
+    background: $card-bg-darker;
+  }
+}
+
+.card__content {
+  display: block;
+  .card__network--profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .card__user {
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .card__quantity {
+    margin-top: 10px;
+    font-size: 56px;
+    font-weight: 700;
+  }
+  //tipo de subscritor
+  .card__subscriber {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+  }
+  //cantidad de seguidores nuevos del dia
+  .card__current {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0em;
+    margin-top: 1.1rem;
+  }
+  .card__trending {
+    color: $lime-Green;
+    &::before {
+      content: url("../../assets/images/icon-up.svg");
+      position: relative;
+      bottom: 2px;
+      right: 4px;
+    }
+  }
+  .card__not-trending {
+    color: $bright-Red;
+    &::before {
+      content: url("../../assets/images/icon-down.svg");
+      position: relative;
+      bottom: 2px;
+      right: 4px;
+    }
+  }
+  //Logo de la red social
+  // .card__user::before {
+  //   position: relative;
+  //   height: 50px;
+  //   width: 20px;
+  //   content: url($icon);
+  //   top: 6px;
+  //   right: 6px;
+  // }
+}
+
+//color del header de la card
+
+.yt {
+  .card__header-strip {
+    display: block;
+    background-color: $youTube;
+    height: 4px;
+  }
+}
+.tw {
+  .card__header-strip {
+    display: block;
+    background-color: $twitter;
+    height: 4px;
+  }
+}
+.ig {
+  .card__header-strip {
+    display: block;
+    background: $instagram;
+    height: 4px;
+  }
+}
+.fb {
+  .card__header-strip {
+    display: block;
+    background-color: $facebook;
+    height: 4px;
+  }
+}
