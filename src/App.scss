@@ -62,6 +62,8 @@ html {
 body {
   font-family: "Inter", "Helvetica", "Gill-Sans", sans-serif;
   color: $text;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 //App Styles
