@@ -1,9 +1,90 @@
-.modal__overlay{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, 0.24);
+@import "../../App.scss";
+
+.modal__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.modal__card {
+  margin: auto;
+  background-color: white;
+  width: 100%;
+  margin: 80px;
+  border-radius: 20px;
+  overflow: hidden;
+  .modal__header {
+    background-color: $top-bg-pattern;
+    padding: 46px 62px;
+  }
+  .modal__row {
+    display: flex;
+  }
+  .modal__row--user-data {
+    margin-top: 20px;
+  }
+  .modal__row--kpi {
+    margin-top: 40px;
+  }
+  .modal__social-logo {
+    height: 21px;
+    width: 21px;
+    background-image: url("../../assets/images/icon-facebook.svg");
+  }
+  .modal__social-user {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: $lighter-text;
+  }
+}
+
+
+
+
+
+
+
+.modal__kpi {
+  display: flex;
+  align-items: flex-start;
+  color: $light-text;
+//   max-width: 232px;
+  margin-right: 40px;
+  
+  .modal__kpi-number {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .modal__kpi-label {
+    margin-left:20px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .trending{
+      color: $lime-Green;
+      &::before{
+          content: url("../../assets/images/icon-up.svg");
+          bottom: 13px;
+          right: 8px;
+          position: relative;
+      }
+  }
+  .not-trending{
+        color: $bright-Red;
+        &::before{
+            content: url("../../assets/images/icon-down.svg");
+            bottom: 13px;
+            right: 8px;
+            position: relative;
+        }
+  }
 }
