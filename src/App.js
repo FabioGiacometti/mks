@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.scss";
 import { overview, overviewToday } from "./assets/mocks/data";
 import Card from "./components/card/Card";
