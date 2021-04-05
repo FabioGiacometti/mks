@@ -1,7 +1,6 @@
 import React from "react";
 import "./Card.scss";
-import { getCardHeaderStyle} from './card.utilities'
-import { getSubscriberStatus, getCardStyles } from '../../utils'
+import { getSubscriberStatus} from '../../utils'
 import SocialLogo from "../shared/socialLogo";
 
 

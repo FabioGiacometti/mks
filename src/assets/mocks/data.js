@@ -1,8 +1,3 @@
-
-
-let followers = 23004
-
-
 export const overview = [
   {
     network: "fb",

@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import "./modal.scss";
 import Chart from "../chart/Chart";
-import { chartData, chartData2 } from "../../assets/mocks/data";
+import { chartData } from "../../assets/mocks/data";
 
 const Modal = () => {
-  const [chartInput, setChartInput] = useState(chartData);
+  const [chartInput] = useState(chartData);
 
   return (
     <div className="modal">
