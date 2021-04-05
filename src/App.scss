@@ -9,10 +9,10 @@
   color: $font-color;
 }
 
-
 @mixin rounded($radius: 4px) {
   border-radius: $radius;
 }
+
 //Global reset
 * {
   margin: 0;
@@ -44,41 +44,10 @@ body {
 }
 
 //App Styles
+
 .overview_title {
   font-size: 1.5rem;
 }
-//Dark Theme
-/*
-
-#### Light Theme
-
-
-
-### Neutral
-
-#### Dark Theme
-
-- Very Dark Blue (BG): hsl(230, 17%, 14%)
-- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-- Desaturated Blue (Text): hsl(228, 34%, 66%)
-- White (Text): hsl(0, 0%, 100%)
-- Desaturated Purple (Chart): hsl(243, 51%, 70%)
-
-#### Light Theme
-
-
-## Typography
-
-### Body Copy
-
-- Font size (Overview Card Headings): 14px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700 */
-
 .app__container {
   max-width: 1100px;
   margin: auto;
@@ -93,7 +62,7 @@ body {
     z-index: -1;
   }
   @media (max-width: 1100px) {
-    padding: 0 30px 0 20px;
+    padding: 0 25px 0 20px;
   }
 }
 
