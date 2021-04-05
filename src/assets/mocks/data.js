@@ -4,7 +4,8 @@ export const overview = [
     user: "@nathanf",
     subscriberType: "Followers",
     quantity: "1987",
-    current: "12 Today",
+    current: "12",
+    lastTenDays: "81",
     trending: true
   },
   {
@@ -12,7 +13,8 @@ export const overview = [
     user: "@nathanf",
     subscriberType: "Followers",
     quantity: "1044",
-    current: "99 Today",
+    current: "99",
+    lastTenDays: "105",
     trending: true
   },
   {
@@ -20,7 +22,8 @@ export const overview = [
     user: "@realnathanf",
     subscriberType: "Followers",
     quantity: "11k",
-    current: "1099 Today",
+    current: "1099",
+    lastTenDays: "11000",
     trending: true
   },
   {
@@ -28,7 +31,8 @@ export const overview = [
     user: "Nathan F.",
     subscriberType: "Subscribers",
     quantity: "8239",
-    current: "144 Today",
+    current: "144",
+    lastTenDays: "284",
     trending: false
   }]
 

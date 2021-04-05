@@ -16,17 +16,16 @@ $top-bg-pattern: hsl(225, 100%, 98%);
 //Light Grayish Blue
 $card-bg: hsl(227, 47%, 96%);
 //Light Grayish Blue
-$card-bg-darker: hsl(232,33,91);
+$card-bg-darker: hsl(232, 33, 91);
 //dark-grayish-blue
 $light-text: hsl(228, 12%, 44%);
 //Text
 $text: hsl(230, 17%, 14%);
 // No contemplado en stylesheet
-$lighter-text: #98A1C3;
+$lighter-text: #98a1c3;
 //desaturated-purple
 $chart: hsl(243, 51%, 70%);
 $toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-
 
 //Global Mixins
 
@@ -49,17 +48,16 @@ $toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
 //Global styles
 
 html {
-  font-size: 16px!important;
-    
+  font-size: 16px !important;
+
   @media screen and (min-width: 900px) {
-    font-size: 18px!important;
+    font-size: 18px !important;
   }
-    
+
   @media screen and (min-width: 1200px) {
-    font-size: 20px!important;
+    font-size: 20px !important;
   }
 }
-
 
 body {
   font-family: "Inter", "Helvetica", "Gill-Sans", sans-serif;
@@ -69,8 +67,8 @@ body {
 }
 
 //App Styles
-.overview_title{
-  font-size: 1.5rem
+.overview_title {
+  font-size: 1.5rem;
 }
 //Dark Theme
 /*
@@ -107,7 +105,7 @@ body {
 .app__container {
   max-width: 1100px;
   margin: auto;
-  &::before{
+  &::before {
     content: "";
     height: 250px;
     width: 100vw;
@@ -116,25 +114,28 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    @media (max-width: 1100px) {
+      padding: 0 40px 0 20px;
+    }
   }
 }
 
 .card-deck__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 24px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px 30px;
 }
 
-.overview_title{
+.overview_title {
   font-size: 1.2rem;
   margin-top: 2.4rem;
 }
 //contenedor de cards chicas
-.card-deck__container--sm{
+.card-deck__container--sm {
   margin-top: 1.2rem;
 }
 
 //contenedor de cards grandes
-.card-deck__container--lg{
+.card-deck__container--lg {
   margin-top: 2rem;
-} 
+}

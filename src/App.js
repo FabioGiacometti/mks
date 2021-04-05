@@ -25,8 +25,6 @@ function App() {
       </Modal>
       <Header />
 
-      <button onClick={() => handleModal()}>Clickor</button>
-
       <div className="card-deck__container card-deck__container--lg">
         {cardDeck}
       </div>

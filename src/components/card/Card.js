@@ -16,7 +16,7 @@ const Card = (props) => {
         </div>
         <p className="card__quantity">{props.data.quantity}</p>
         <p className="card__subscriber">{props.data.subscriberType}</p>
-        <p className={"card__current " + getSubscriberStatus(props.data.trending)  }>{props.data.current}</p>
+        <p className={"card__current " + getSubscriberStatus(props.data.trending)  }>{props.data.current} Today</p>
       </div>
     </div>
   );
