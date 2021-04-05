@@ -14,6 +14,7 @@ function App() {
   let cardDeck = overview.map((card, index) => {
     return <Card data={card} key={index} onShow={() => setShowModal(true)} />;
   });
+  
   let smallCardDeck = overviewToday.map((smallCard, index) => (
     <CardSm data={smallCard} key={index} />
   ));
