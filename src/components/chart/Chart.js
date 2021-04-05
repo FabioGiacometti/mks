@@ -14,6 +14,7 @@ import './chart.scss'
           width={500}
           height={300}
           data={props.chartData}
+          minWidth={300}
           margin={{
             top: 5,
             right: 30,

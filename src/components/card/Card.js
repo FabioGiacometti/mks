@@ -3,8 +3,6 @@ import "./Card.scss";
 import { getSubscriberStatus} from '../../utils'
 import SocialLogo from "../shared/socialLogo";
 
-
-
 const Card = (props) => {
   return (
     <div className={"card__body " + props.data.network} onClick={()=> props.onShow()}>

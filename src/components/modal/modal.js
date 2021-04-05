@@ -5,8 +5,6 @@ import { chartData } from "../../assets/mocks/data";
 
 const Modal = (props) => {
   const [chartInput] = useState(chartData);
-    console.log("props", props)
-
 
   return (
     <div className="modal" style={props.data ? {display: "flex"} : {display: "none"}} >

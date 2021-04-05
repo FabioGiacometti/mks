@@ -22,7 +22,7 @@
   position: absolute;
 }
 
-.label {
+.toggle__label {
   background: var(--toggle);
   display: flex;
   border-radius: 50px;
@@ -45,6 +45,6 @@
   transition: all 200ms ease-in-out;
 }
 
-#checkbox:checked + .label > .ball {
+#checkbox:checked + .toggle__label > .ball {
   left: 50%;
 }
