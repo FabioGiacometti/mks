@@ -100,3 +100,89 @@ export const overviewToday =
       trending: false
     },
   ]
+
+  export const chartData = [
+    {
+      name: '4',
+      followers: 3
+    },
+    {
+      name: '5',
+      followers: 2
+    },
+    {
+      name: '6',
+      followers: 6
+    },
+    {
+      name: '7',
+      followers: 8
+    },
+    {
+      name: '8',
+      followers: 9
+    },
+    {
+      name: '9',
+      followers: 10
+    },
+    {
+      name: '10',
+      followers: 9
+    },
+    {
+      name: '11',
+      followers: 10
+    },
+    {
+      name: '12',
+      followers: 12
+    },
+    {
+      name: '13',
+      followers: 12
+    }
+  ];
+
+  export const chartData2 = [
+    {
+      name: '4',
+      followers: 5
+    },
+    {
+      name: '5',
+      followers: 5
+    },
+    {
+      name: '6',
+      followers: 5
+    },
+    {
+      name: '7',
+      followers: 5
+    },
+    {
+      name: '8',
+      followers: 5
+    },
+    {
+      name: '9',
+      followers: 5
+    },
+    {
+      name: '10',
+      followers: 5
+    },
+    {
+      name: '11',
+      followers: 5
+    },
+    {
+      name: '12',
+      followers: 5
+    },
+    {
+      name: '13',
+      followers: 5
+    }
+  ];

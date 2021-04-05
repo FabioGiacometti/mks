@@ -14,16 +14,23 @@
 }
 
 .modal__card {
-  margin: auto;
-  background-color: white;
-  width: 100%;
-  margin: 80px;
-  border-radius: 20px;
-  overflow: hidden;
-  .modal__header {
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    margin: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+    @media(max-width: 900px) {
+        margin: 20px;
+    }
+}
+.modal__header {
     background-color: $top-bg-pattern;
     padding: 46px 62px;
-  }
+    @media(max-width: 500px) {
+        padding: 24px;
+    }
+    }
   .modal__row {
     display: flex;
   }
@@ -32,6 +39,10 @@
   }
   .modal__row--kpi {
     margin-top: 40px;
+    flex-wrap: wrap;
+    @media(max-width: 500px) {
+        margin-top: 20px;
+    }
   }
   .modal__social-logo {
     height: 21px;
@@ -44,13 +55,6 @@
     font-weight: 700;
     color: $lighter-text;
   }
-}
-
-
-
-
-
-
 
 .modal__kpi {
   display: flex;
@@ -87,4 +91,13 @@
             position: relative;
         }
   }
+}
+
+.modal__chart{
+    height: 50vh;
+    padding: 38px 20px;
+    @media(max-width: 500px) {
+        padding: 20px 0 0 0;
+        margin-left: -30px;
+    }
 }
