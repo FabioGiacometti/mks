@@ -1,35 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-//light-theme variables
-
-$lime-Green: hsl(163, 72%, 41%);
-$bright-Red: hsl(356, 69%, 56%);
-$facebook: hsl(195, 100%, 50%);
-$twitter: hsl(203, 89%, 53%);
-$instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-$youTube: hsl(348, 97%, 39%);
-$Toggle: hsl(230, 22%, 74%);
-//White
-$bg: hsl(0, 0%, 100%);
-//Very Pale Blue
-$top-bg-pattern: hsl(225, 100%, 98%);
-//Light Grayish Blue
-$card-bg: hsl(227, 47%, 96%);
-//Light Grayish Blue
-$card-bg-darker: hsl(232, 33, 91);
-//dark-grayish-blue
-$light-text: hsl(228, 12%, 44%);
-//Text
-$text: hsl(230, 17%, 14%);
-// No contemplado en stylesheet
-$lighter-text: #98a1c3;
-//desaturated-purple
-$chart: hsl(243, 51%, 70%);
-$toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+@import "./themes.scss";
 
 //Global Mixins
 
-@mixin text-element($font-size: 20px, $font-weigth: 700, $font-color: $text) {
+@mixin text-element($font-size: 20px, $font-weigth: 700, $font-color: var(--text)) {
   font-size: $font-size;
   font-weight: $font-weigth;
   color: $font-color;
@@ -61,7 +35,8 @@ html {
 
 body {
   font-family: "Inter", "Helvetica", "Gill-Sans", sans-serif;
-  color: $text;
+  color: var(--text);
+  background: var(--bg);
   width: 100vw;
   overflow-x: hidden;
   padding-bottom: 100px;
@@ -110,7 +85,7 @@ body {
     content: "";
     height: 250px;
     width: 100vw;
-    background: $top-bg-pattern;
+    background: var(--top-bg-pattern);
     position: absolute;
     top: 0;
     left: 0;

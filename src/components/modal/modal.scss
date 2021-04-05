@@ -11,6 +11,7 @@
   left: 0;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.24);
+  
   @media (max-width: 500px) {
     align-items: flex-start;
     padding-top: 10px;
@@ -20,7 +21,7 @@
 .modal__card {
   position: relative;
   margin: auto;
-  background-color: white;
+  background-color: var(--card-bg);
   width: 100%;
   border-radius: 20px;
   overflow: hidden;
@@ -32,7 +33,7 @@
   }
 }
 .modal__header {
-  background-color: $top-bg-pattern;
+  background-color: var(--top-bg-pattern);
   padding: 46px 62px;
   @media (max-width: 500px) {
     padding: 24px;
@@ -60,13 +61,13 @@
   margin-left: 10px;
   font-size: 0.8rem;
   font-weight: 700;
-  color: $lighter-text;
+  color: var(--lighter-text);
 }
 
 .modal__kpi {
   display: flex;
   align-items: flex-start;
-  color: $light-text;
+  color: var(--light-text);
   //   max-width: 232px;
   margin-right: 40px;
 
@@ -81,7 +82,7 @@
     margin-top: 6px;
   }
   .trending {
-    color: $lime-Green;
+    color: var(--lime-Green);
     &::before {
       content: url("../../assets/images/icon-up.svg");
       bottom: 13px;
@@ -90,7 +91,7 @@
     }
   }
   .not-trending {
-    color: $bright-Red;
+    color: var(--bright-Red);
     &::before {
       content: url("../../assets/images/icon-down.svg");
       bottom: 13px;
@@ -113,7 +114,7 @@
   position: absolute;
   top: 40px;
   right: 36px;
-  color: $lighter-text;
+  color: var(--lighter-text);
   cursor: pointer;
   @media (max-width: 500px) {
     top: 20px;

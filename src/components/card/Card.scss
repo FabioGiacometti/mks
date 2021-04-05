@@ -1,10 +1,11 @@
 @import "../../App.scss";
+@import "../../themes.scss";
 
 .card__body {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: $card-bg;
+  background: var(--card-bg);
   text-align: center;
   overflow: hidden;
   border-radius: 0.25em;
@@ -16,7 +17,7 @@
     text-align: left;
   }
   &:hover {
-    background: $card-bg-darker;
+    background: var(--card-bg-darker);
   }
 }
 
@@ -62,7 +63,7 @@
     margin-top: 1.1rem;
   }
   .card__trending {
-    color: $lime-Green;
+    color: var(--lime-Green);
     &::before {
       content: url("../../assets/images/icon-up.svg");
       position: relative;
@@ -71,7 +72,7 @@
     }
   }
   .card__not-trending {
-    color: $bright-Red;
+    color: var(--bright-Red);
     &::before {
       content: url("../../assets/images/icon-down.svg");
       position: relative;
@@ -105,37 +106,37 @@
 }
 .yt {
   .card__header-strip {
-    background-color: $youTube;
+    background-color: var(--youTube);
   }
 }
 .tw {
   .card__header-strip {
-    background-color: $twitter;
+    background-color: var(--twitter);
   }
 }
 .ig {
   .card__header-strip {
-    background: $instagram;
+    background: var(--instagram);
   }
 }
 .fb {
   .card__header-strip {
-    background-color: $facebook;
+    background-color: var(--facebook);
   }
 }
 
-@keyframes mymove {
-  0% {width: 4px;
-    height: 100%;
-  }
-  50%{
-    width: 4px;
-    height: 4px;
-  }
-  100% {width: 100%;
-    height: 4px}
-}
+// @keyframes mymove {
+//   0% {width: 4px;
+//     height: 100%;
+//   }
+//   50%{
+//     width: 4px;
+//     height: 4px;
+//   }
+//   100% {width: 100%;
+//     height: 4px}
+// }
 
-.card__body:hover .card__header-strip{
-  animation: mymove 500ms alternate both
-}
+// .card__body:hover .card__header-strip{
+//   animation: mymove 500ms alternate both
+// }

@@ -22,7 +22,6 @@ function App() {
   return (
     <div className="app__container">
       <Modal data={showModal} onClose={() => setShowModal(false)}>
-        {" "}
       </Modal>
       <Header />
 
