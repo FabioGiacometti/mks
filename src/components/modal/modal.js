@@ -3,12 +3,14 @@ import "./modal.scss";
 import Chart from "../chart/Chart";
 import { chartData } from "../../assets/mocks/data";
 
-const Modal = () => {
+const Modal = (props) => {
   const [chartInput] = useState(chartData);
+    console.log("props", props)
+
 
   return (
-    <div className="modal">
-      <div className="modal__overlay">
+    <div className="modal" style={props.data ? {display: "flex"} : {display: "none"}} >
+      <div className="modal__overlay" onClick={()=> props.onClose()}>
         <div className="modal__card">
           <div className="modal__header">
             <h2 className="modal__title">Facebook Followers</h2>
@@ -36,6 +38,8 @@ const Modal = () => {
                 </span>
               </div>
             </div>
+            <span className="modal__close" onClick={()=> props.onClose()}
+            >&times;</span>
           </div>
           <div className="modal__chart">
           {/* <button onClick={() => this.setChartInput({ chartData2 })}>

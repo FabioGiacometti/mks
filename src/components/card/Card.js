@@ -7,7 +7,7 @@ import SocialLogo from "../shared/socialLogo";
 
 const Card = (props) => {
   return (
-    <div className={"card__body " + props.data.network}>
+    <div className={"card__body " + props.data.network} onClick={()=> props.onShow()}>
       <div className="card__content">
         <span className="card__header-strip"></span>
         <div className="card__network--profile">

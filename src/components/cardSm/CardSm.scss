@@ -1,35 +1,33 @@
-@import '../../App.scss';
-@import '../card/Card.scss';
+@import "../../App.scss";
+@import "../card/Card.scss";
 
-.card__body--sm{
-    padding: 27px 24px;
+.card__body--sm {
+  padding: 27px 24px;
 }
 
-.card__row{
-    display: flex;
-    justify-content: space-between;
-    &:nth-child(2){
-        margin-top: 1.2rem;
-    }
+.card__row {
+  display: flex;
+  justify-content: space-between;
+  &:nth-child(2) {
+    margin-top: 1.2rem;
+  }
 }
 
-.card__data--title{
-    font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 17px;
-letter-spacing: 0em;
-text-align: left;
-
+.card__data--title {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
-.card__quantity--sm{
-    font-family: Inter;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0em;
-    text-align: left;
-    
-    }
+.card__quantity--sm {
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}

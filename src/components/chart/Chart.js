@@ -9,7 +9,7 @@ import './chart.scss'
 
 
     return (
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" height="100%" style={{minWidth: "200px"}}>
         <LineChart
           width={500}
           height={300}
