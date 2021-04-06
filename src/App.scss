@@ -72,6 +72,9 @@ body {
   gap: 24px 30px;
   @media (max-width: 520px) {
     gap: 0;
+    &:nth-child(even){
+      background-color: var(--card-bg-darker)!important;
+    }
   }
 }
 

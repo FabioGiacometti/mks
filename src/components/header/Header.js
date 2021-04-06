@@ -1,9 +1,12 @@
 import React from 'react'
 import './Header.scss'
 
+let isDarkModeEnabled = false
 const handleDarkModeSwitch = () => {
     const body = document.querySelector('body')
     body.classList.toggle('dark')
+    isDarkModeEnabled = !isDarkModeEnabled
+    console.log(isDarkModeEnabled)
 }
 
 const Header = () => {
@@ -13,7 +16,7 @@ const Header = () => {
                 <h1 className="title">Social Media Dashboard</h1>
                 <h2 className="subtitle">Total Followers: 23,004</h2>
             </div>
-            <div className="toggle_container">
+            <div className="toggle_container" title={"Enable/Disable Dark Mode"}>
                 <input type="checkbox" name="checkbox" id="checkbox"/>
                 <label htmlFor="checkbox" className="toggle__label" onClick={() => handleDarkModeSwitch()}>
                     <div className="ball"></div>

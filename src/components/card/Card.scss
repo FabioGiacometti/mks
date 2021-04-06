@@ -15,11 +15,14 @@
   @media (max-width: 520px) {
     padding-left: 40px;
     text-align: left;
+    &:nth-of-type(even){
+      background-color: var(--card-bg-darker)!important;
+    }
   }
   &:hover {
     background: var(--card-bg-darker);
   }
-}
+ }
 
 .card__content {
   display: block;

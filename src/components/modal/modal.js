@@ -36,7 +36,7 @@ const Modal = (props) => {
                 </span>
               </div>
             </div>
-            <span className="modal__close" onClick={()=> props.onClose()}
+            <span className="modal__close" onClick={()=> props.onClose()} style={{fontSize: "30px"}} title="Close"
             >&times;</span>
           </div>
           <div className="modal__chart">

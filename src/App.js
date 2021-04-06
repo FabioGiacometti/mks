@@ -21,7 +21,7 @@ function App() {
     <div className="app__container">
       <Modal data={showModal} onClose={() => setShowModal(false)}>
       </Modal>
-      <Header />
+      <Header/>
 
       <div className="card-deck__container card-deck__container--lg">
         {cardDeck}
