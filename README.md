@@ -1,5 +1,5 @@
 Social Media Dashboard Challenge:
-'''''''''''''''''''''''''''''''''
+
 Proyecto desafio para etapa de selección de UX Developer para **Making Sense**.
 
 **Stack del Proyecto**
