@@ -20,7 +20,8 @@ const Header = () => {
                     <h2 className="subtitle">Total Followers: 23,004</h2>
                 </div>
             </div>
-            <div className="toggle_container" title={"Enable/Disable Dark Mode"}>
+            <div className="toggle__container" title={"Enable/Disable Dark Mode"}>
+                <span className="dark-mode__label">Dark Mode</span>
                 <input type="checkbox" name="checkbox" id="checkbox"/>
                 <label htmlFor="checkbox" className="toggle__label" onClick={() => handleDarkModeSwitch()}>
                     <div className="ball"></div>

@@ -7,6 +7,19 @@
   width: 100%;
 }
 
+.toggle__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode__label{
+  margin-right: 10px; 
+  font-size: 14px; 
+  font-weight: 700;
+  color: var(--light-text)
+}
+
 .header__titles-container {
   transition: all 200ms ease-in-out;
 }
@@ -16,7 +29,7 @@
   height: 60px;
   width: 60px;
   opacity: 0;
-  transition: all 400ms ;
+  transition: all 400ms;
 }
 
 .header__titles {
@@ -26,9 +39,10 @@
       margin-left: 0;
       margin-left: 80px;
     }
-    .logo{
+    .logo {
       top: 36px;
-      opacity: 1;    }
+      opacity: 1;
+    }
   }
 }
 .title {
@@ -74,5 +88,3 @@
 #checkbox:checked + .toggle__label > .ball {
   left: 50%;
 }
-
-
