@@ -1,11 +1,9 @@
-@import "../../App.scss";
 @import "../card/Card.scss";
-@import "../../themes.scss";
 
 .card__body--sm {
   padding: 27px 24px;
 }
-
+// filas dentro de lac card
 .card__row {
   display: flex;
   justify-content: space-between;

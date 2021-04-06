@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -32,36 +33,6 @@ body {
   font-size: 1.5rem;
 }
 
-/*
-
-#### Light Theme
-
-
-
-### Neutral
-
-#### Dark Theme
-
-- Very Dark Blue (BG): hsl(230, 17%, 14%)
-- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-- Desaturated Blue (Text): hsl(228, 34%, 66%)
-- White (Text): hsl(0, 0%, 100%)
-- Desaturated Purple (Chart): hsl(243, 51%, 70%)
-
-#### Light Theme
-
-
-## Typography
-
-### Body Copy
-
-- Font size (Overview Card Headings): 14px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700 */
 .app__container {
   max-width: 1100px;
   margin: auto;
@@ -131,36 +102,6 @@ body {
   font-size: 1.5rem;
 }
 
-/*
-
-#### Light Theme
-
-
-
-### Neutral
-
-#### Dark Theme
-
-- Very Dark Blue (BG): hsl(230, 17%, 14%)
-- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-- Desaturated Blue (Text): hsl(228, 34%, 66%)
-- White (Text): hsl(0, 0%, 100%)
-- Desaturated Purple (Chart): hsl(243, 51%, 70%)
-
-#### Light Theme
-
-
-## Typography
-
-### Body Copy
-
-- Font size (Overview Card Headings): 14px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700 */
 .app__container {
   max-width: 1100px;
   margin: auto;
