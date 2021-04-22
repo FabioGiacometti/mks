@@ -8,10 +8,13 @@ const Card = (props) => {
   // Estado de la tarjeta, para mostrar el flipout
   const [isActive, setActive] = useState(false);
 
+  // Permite manejar el estado de la card (vista o girada)
   const handleToggle = () => {
     setActive(!isActive);
     console.log("is active",isActive)
   };
+
+  
   
   // destructurando props para facilitar lectura
   const {network, user, quantity, subscriberType, trending, current, animate} = props.data;
@@ -22,7 +25,7 @@ const Card = (props) => {
   return (
     <div
       className={"animate__animated animate__fadeInLeft card__body " + network + " " +( isActive && props.animate ?  " animate__flipOutY" : " animate__flipInY" )}
-      onClick={() => {props.onShow(); handleToggle()}}
+      onClick={() => {handleToggle(); props.onShow() }}
       title={`See ${user}'s ${getCardStyles(network).toUpperCase( )} metrics`}
     >
       {console.log("animate", props.animate)}
