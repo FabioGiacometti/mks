@@ -9,7 +9,7 @@ const CardSm = (props) => {
   const { title, network, quantity, trending, current } = props.data;
 
   return (
-    <div className="card__body card__body--sm" title={`See today's ${getCardStyles(network).toUpperCase( )} metrics`}>
+    <div className="animate__animated animate__fadeInRight card__body card__body--sm" title={`See today's ${getCardStyles(network).toUpperCase( )} metrics`}>
       <div className="card__content">
         <div className="card__row">
           <p className="card__data--title">{title}</p>

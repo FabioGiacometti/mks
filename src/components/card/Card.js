@@ -11,7 +11,7 @@ const Card = (props) => {
 
   return (
     <div
-      className={"card__body " + network}
+      className={"animate__animated animate__fadeInLeft card__body " + network}
       onClick={() => props.onShow()}
       title={`See ${user}'s ${getCardStyles(network).toUpperCase( )} metrics`}
     >
