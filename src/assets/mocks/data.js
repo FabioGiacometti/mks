@@ -21,7 +21,7 @@ export const overview = [
     network: "ig",
     user: "@realnathanf",
     subscriberType: "Followers",
-    quantity: "11k",
+    quantity: "11000",
     current: "1099",
     lastTenDays: "11000",
     trending: true

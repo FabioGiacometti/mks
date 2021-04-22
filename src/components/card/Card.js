@@ -1,8 +1,8 @@
 import React from "react";
-import "./Card.scss";
-import { getSubscriberStatus } from "../../utils";
+import CountUp from 'react-countup';
+import { getSubscriberStatus, getCardStyles } from "../../utils";
 import SocialLogo from "../shared/socialLogo";
-import {getCardStyles} from '../../utils'
+import "./Card.scss";
 
 const Card = (props) => {
   
@@ -21,7 +21,7 @@ const Card = (props) => {
           <SocialLogo icon={network}></SocialLogo>
           <p className="card__user">{user}</p>
         </div>
-        <p className="card__quantity">{quantity}</p>
+        <CountUp className="card__quantity" end={quantity} duration="1"/>
         <p className="card__subscriber">{subscriberType}</p>
         <p
           className={
