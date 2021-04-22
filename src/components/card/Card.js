@@ -9,19 +9,23 @@ const Card = (props) => {
   // destructurando props para facilitar lectura
   const {network, user, quantity, subscriberType, trending, current} = props.data;
 
+  const parsedQuantity = (quantity) => quantity > 10000 ? (quantity / 1000) : quantity
   return (
     <div
       className={"animate__animated animate__fadeInLeft card__body " + network}
       onClick={() => props.onShow()}
       title={`See ${user}'s ${getCardStyles(network).toUpperCase( )} metrics`}
     >
+      {console.log(quantity/1000)}
       <div className="card__content">
         <span className="card__header-strip"></span>
         <div className="card__network--profile">
           <SocialLogo icon={network}></SocialLogo>
           <p className="card__user">{user}</p>
         </div>
-        <CountUp className="card__quantity" end={quantity} duration="1"/>
+        <span className="card__quantity">
+          <CountUp className="" end={parsedQuantity(quantity)} duration="2"></CountUp>{quantity > 10000 ? <span>k</span> : null }
+          </span>
         <p className="card__subscriber">{subscriberType}</p>
         <p
           className={

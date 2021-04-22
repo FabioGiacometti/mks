@@ -3,7 +3,7 @@ export const overview = [
     network: "fb",
     user: "@nathanf",
     subscriberType: "Followers",
-    quantity: "1987",
+    quantity: 1987,
     current: "12",
     lastTenDays: "81",
     trending: true
@@ -12,7 +12,7 @@ export const overview = [
     network: "tw",
     user: "@nathanf",
     subscriberType: "Followers",
-    quantity: "1044",
+    quantity: 1044,
     current: "99",
     lastTenDays: "105",
     trending: true
@@ -21,7 +21,7 @@ export const overview = [
     network: "ig",
     user: "@realnathanf",
     subscriberType: "Followers",
-    quantity: "11000",
+    quantity: 11000,
     current: "1099",
     lastTenDays: "11000",
     trending: true
@@ -30,7 +30,7 @@ export const overview = [
     network: "yt",
     user: "Nathan F.",
     subscriberType: "Subscribers",
-    quantity: "8239",
+    quantity:   8239,
     current: "144",
     lastTenDays: "284",
     trending: false
@@ -66,7 +66,7 @@ export const overviewToday =
     {
       network: "ig",
       title: "Profile Views",
-      quantity: "52k",
+      quantity: 52000,
       current: 1375,
       trending: true
     },
