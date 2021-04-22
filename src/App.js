@@ -8,18 +8,21 @@ import Modal from "./components/modal/modal";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [modalData, setModalData] = useState(false)
 
+  // mapeado de los datos para generar la lista de cards
   let cardDeck = overview.map((card, index) => {
-    return <Card data={card} key={index} onShow={() => setShowModal(true)} />;
+    return <Card data={card} key={index} onShow={() => setShowModal(true)} animate={showModal}/>;
   });
 
   let smallCardDeck = overviewToday.map((smallCard, index) => (
     <CardSm data={smallCard} key={index} />
   ));
 
+  console.log("showModal en App", showModal)
   return (
     <div className="app__container">
-      <Modal data={showModal} onClose={() => setShowModal(false)}>
+      <Modal showModal={showModal} onClose={() => setShowModal(false)}>
       </Modal>
       <Header/>
 

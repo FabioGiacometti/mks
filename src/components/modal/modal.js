@@ -1,15 +1,27 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./modal.scss";
 import Chart from "../chart/Chart";
 import { chartData } from "../../assets/mocks/data";
 
 const Modal = (props) => {
+  const showModal = props.showModal
   const [chartInput] = useState(chartData);
-
+  const getModalStyle = () =>
+    showModal
+      ? "modal__card animate__animated animate__zoomIn animate__delay-1s"
+      : "modal__card animate__animated animate__fadeOutDown animate__delay-1s";
+  const getOverlayStyle = () =>
+    showModal
+      ? "modal animate__animated animate__fadeInRight"
+      : "modal animate__animated animate__fadeOut";
+  console.log("modalprops", props)
   return (
-    <div className="modal" style={props.data ? {display: "flex"} : {display: "none"}} >
-      <div className="modal__overlay" onClick={()=> props.onClose()}>
-        <div className="modal__card">
+    <div
+      className="modal"
+      style={showModal ? { display: "flex" } : { display: "none" }}
+    >
+      <div className="modal__overlay" onClick={() => props.onClose()}>
+        <div className={getModalStyle()} style={{animationDelay:"200ms"}}>
           <div className="modal__header">
             <h2 className="modal__title">Facebook Followers</h2>
             <div className="modal__row modal__row--user-data">
@@ -36,11 +48,17 @@ const Modal = (props) => {
                 </span>
               </div>
             </div>
-            <span className="modal__close" onClick={()=> props.onClose()} style={{fontSize: "30px"}} title="Close"
-            >&times;</span>
+            <span
+              className="modal__close"
+              onClick={() => props.onClose()}
+              style={{ fontSize: "30px" }}
+              title="Close"
+            >
+              &times;
+            </span>
           </div>
           <div className="modal__chart">
-          {/* <button onClick={() => this.setChartInput({ chartData2 })}>
+            {/* <button onClick={() => this.setChartInput({ chartData2 })}>
           Click me
         </button> */}
             <Chart chartData={chartInput}></Chart>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.scss'
 import Logo from '../../assets/images/Logo.png'
+import CountUp from 'react-countup';
 
 let isDarkModeEnabled = false
 const handleDarkModeSwitch = () => {
@@ -17,7 +18,9 @@ const Header = () => {
                 <img src={Logo} alt="" className="logo"/>
                 <div className="header__titles-container">
                     <h1 className="title">Social Media Dashboard</h1>
-                    <h2 className="subtitle">Total Followers: 23,004</h2>
+                    <h2 className="subtitle">Total Followers: <span>
+                        <CountUp end={23004} duration="1"/>
+                    </span></h2>
                 </div>
             </div>
             <div className="toggle__container" title={"Enable/Disable Dark Mode"}>
